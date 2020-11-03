@@ -1,0 +1,91 @@
+$font-stack: Helvetica, sans-serif;
+$mobile: 600px;
+$medium: 900px;
+
+html {
+  font-size: 18px;
+  /*font-size: 20px;
+  @media (max-width: $medium) {
+    font-size: 18px;
+  }
+  @media (max-width: $mobile) {
+    font-size: 16px;
+  }*/
+}
+
+body {
+  font: 100% $font-stack;
+  margin: 0;
+  padding: 0;
+}
+
+%headings {
+  padding: 0;
+  display: block;
+  text-align: center;
+  font-weight: 900;
+}
+
+%paragraphs {
+  display: block;
+  text-align: center;
+  @media (max-width: $medium) {
+    font-size: .85rem;
+  }
+  @media (max-width: $mobile) {
+    font-size: .75rem;
+  }
+}
+
+.first-h {
+  @extend %headings;
+  font-size: 3rem;
+  @media (max-width: $medium) {
+    font-size: 2.75rem;
+  }
+  @media (max-width: $mobile) {
+    font-size: 2.5rem;
+  }
+}
+
+.second-h {
+  @extend %headings;
+  font-size: 2rem;
+  @media (max-width: $medium) {
+    font-size: 1.75rem;
+  }
+  @media (max-width: $mobile) {
+    font-size: 1.5rem;
+  }
+}
+
+.third-h {
+  @extend %headings;
+  font-size: 1.5rem;
+  @media (max-width: $medium) {
+    font-size: 1.25rem;
+  }
+  @media (max-width: $mobile) {
+    font-size: 1rem;
+  }
+}
+
+.first-p {
+  @extend %paragraphs;
+}
+
+.second-p {
+  @extend %paragraphs;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  li {
+    @extend %paragraphs;
+    padding: 5px;
+    list-style-type: square;
+  }
+}
+
+/*Test*/

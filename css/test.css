@@ -1,0 +1,100 @@
+html {
+  font-size: 18px;
+  /*font-size: 20px;
+  @media (max-width: $medium) {
+    font-size: 18px;
+  }
+  @media (max-width: $mobile) {
+    font-size: 16px;
+  }*/
+}
+
+body {
+  font: 100% Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.first-h, .second-h, .third-h {
+  padding: 0;
+  display: block;
+  text-align: center;
+  font-weight: 900;
+}
+
+.first-p, .second-p, ul li {
+  display: block;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .first-p, .second-p, ul li {
+    font-size: .85rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .first-p, .second-p, ul li {
+    font-size: .75rem;
+  }
+}
+
+.first-h {
+  font-size: 3rem;
+}
+
+@media (max-width: 900px) {
+  .first-h {
+    font-size: 2.75rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .first-h {
+    font-size: 2.5rem;
+  }
+}
+
+.second-h {
+  font-size: 2rem;
+}
+
+@media (max-width: 900px) {
+  .second-h {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .second-h {
+    font-size: 1.5rem;
+  }
+}
+
+.third-h {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 900px) {
+  .third-h {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .third-h {
+    font-size: 1rem;
+  }
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  padding: 5px;
+  list-style-type: square;
+}
+
+/*Test*/
