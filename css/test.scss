@@ -2,6 +2,11 @@ $font-stack: Helvetica, sans-serif;
 $mobile: 600px;
 $medium: 900px;
 
+@mixin headingChange {
+  color: blue;
+  font-family: "Times New Roman" , Times, serif;
+}
+
 html {
   font-size: 18px;
   /*font-size: 20px;
@@ -24,6 +29,9 @@ body {
   display: block;
   text-align: center;
   font-weight: 900;
+  @media (max-width: $mobile) {
+    @include headingChange;
+  }
 }
 
 %paragraphs {

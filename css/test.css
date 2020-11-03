@@ -22,6 +22,13 @@ body {
   font-weight: 900;
 }
 
+@media (max-width: 600px) {
+  .first-h, .second-h, .third-h {
+    color: blue;
+    font-family: "Times New Roman" , Times, serif;
+  }
+}
+
 .first-p, .second-p, ul li {
   display: block;
   text-align: center;
