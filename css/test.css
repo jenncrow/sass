@@ -26,6 +26,7 @@ body {
   .first-h, .second-h, .third-h {
     color: blue;
     font-family: "Times New Roman" , Times, serif;
+    font-style: italic;
   }
 }
 
